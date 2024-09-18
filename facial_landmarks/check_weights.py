@@ -45,7 +45,7 @@ def get_weights(tensor_name):
     return weights
 
 net = FacialLM_Model()
-weights = torch.load('facial_landmarks.pth')
+weights = torch.load('model_weights/facial_landmarks.pth')
 net.load_state_dict(weights)
 net = net.eval()
 

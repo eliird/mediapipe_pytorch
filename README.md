@@ -1,5 +1,13 @@
+# Emotion Detection Model
+Loads the tensors provided by mediapipe to a pytorch model of the similar architecture and then finetunes the model on the `MER Dataset` for emotion detection using landmarks.
+
+MER dataset is preprocessed the same way as in the Landmarks paper and the training requires the path to the reorganized dataset. Check the chin-chime repository for details.
+
+Check the `exploratory.ipynb` model for the details.
+The weights of the trained models are small enough that they are uploaded to github directly in the `model_weights` directory.
+
 # mediapipe_pytorch
-PyTorch implementation of Google's Mediapipe model. Iris Landmark model | Face Mesh Model
+PyTorch implementation of Google's Mediapipe model. Iris Landmark model | Face Mesh Model. Check the original repository for the implementation details.
 
 
 ## Face Mesh Model
